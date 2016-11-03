@@ -40,7 +40,6 @@ On the outermost page with the "real" url or in a layout or template:
 <!-- some other content would be here -->
 
 <iframe src="/container?referer=<%= request.original_url%>" />
-
 ```
 
 Then on the container page with the simpli.fi tag on it:
