@@ -94,7 +94,7 @@ function viewCart() {
 <a href="#" onclick="viewCart();">View My Cart</a>
 ```
 
-Note that while the referer does have to have proper URL syntax it doesn't actually have to a be a real URL on your website.  Its simply there to label the trackign event has occurred.  We do recommend you use the real domain name of your website rather than a fake one, so none of the URL collide with another client's URLs.  
+Note that while the referer does have to have proper URL syntax it doesn't actually have to a be a real URL on your website.  Its simply there to label the trackign event has occurred.  We do require that you use the real domain name of your website rather than a fake one, so none of your URLs collide with another client's URLs.  
 
 
 
