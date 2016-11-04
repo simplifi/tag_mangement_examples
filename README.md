@@ -52,7 +52,7 @@ A similar mechanism could be used for any web programming language such as PHP, 
 
 ## Javascript Buttons and other Events
 
-Sometimes, you will want to trigger a segment or conversion not if the user browses to a specific page or url, but if they perform some action on the page without leaving it using javascript.  This might open a dialog, pop open a new section, or completely change the content of the page without changing the url.  In these cases, one must combine the referer parameter with a bit of javascript to "trick" the Simpli.fi tag into thinking its on a new URL when it is not.
+Sometimes, you will want to trigger a segment or conversion not if the user browses to a specific page or url, but instead when they perform some action on the page.  This might open a dialog, pop open a new section, or completely change the content of the page without changing the url.  In these cases, one must combine the referer parameter with a bit of javascript to "trick" the Simpli.fi tag into thinking its on a new URL when it is not.
 
 Let's say we want to put someone in a segment when the user views their shopping cart, but the shopping cart only opens a dialog window.  One could create a "fake" url representing the shopping cart event. 
 
@@ -94,10 +94,4 @@ function viewCart() {
 <a href="#" onclick="viewCart();">View My Cart</a>
 ```
 
-Note that while the referer does have to have proper URL syntax it doesn't actually have to a be a real URL on your website.  Its simply there to label the trackign event has occurred.  We do require that you use the real domain name of your website rather than a fake one, so none of your URLs collide with another client's URLs.  
-
-
-
-
-
-
+Note that while the referer does have to have proper URL syntax it doesn't actually have to a be a real URL on your website.  Its simply there to label the tracking event has occurred.  We do require that you use the real domain name of your website rather than a fake one, so none of your URLs collide with another client's URLs.  
